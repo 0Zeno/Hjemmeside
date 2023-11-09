@@ -1,4 +1,4 @@
-import { Github, Instagram, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
 function SocialLink({
@@ -20,11 +20,11 @@ function SocialLink({
 export function Socials() {
   return (
     <div className="flex justify-center py-8">
-      <div className="flex flex-col p-2 space-y-2 border border-blue-800">
+      <div className="flex flex-col p-2 space-y-2 border border-gray-400">
         <h1 className="text-center">Contacts:</h1>
         {links.map((link) => {
           return (
-            <div className="flex flex-row justify-between border border-blue-800 p-2">
+            <div className="flex flex-row justify-between border border-gray-400 p-2">
               <SocialLink key={link.name} href={link.href}>
                 {link.name}
               </SocialLink>
@@ -44,13 +44,13 @@ const links = [
     icon: <Github />,
   },
   {
-    name: "Mail",
-    href: "/",
-    icon: <Mail />,
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/zeno-elio-leonardi-60ba58225/",
+    icon: <Linkedin/>
   },
   {
-    name: "Instagram",
-    href: "/",
-    icon: <Instagram />,
+    name: "Mail",
+    href: "mailto:zenoelioleone@gmail.com",
+    icon: <Mail />,
   },
 ];
