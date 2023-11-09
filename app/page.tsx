@@ -3,7 +3,7 @@ import { Socials } from "@/components/socials";
 
 export default function Home() {
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto flex flex-col content-center py-16">
       <h1 className="text-3xl text-center">Zeno Elio Leonardi</h1>
       <Socials />
     </div>

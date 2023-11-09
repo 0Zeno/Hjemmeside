@@ -6,19 +6,15 @@ const routes = [
     href: "/",
   },
   {
-    name: "Om oss",
+    name: "Om meg",
     href: "/om",
-  },
-  {
-    name: "Blogg",
-    href: "/blogg",
   },
 ];
 
 export function SiteHeader() {
   return (
-    <header className="flex justify-between - p-4">
-      <h1>Min blogg</h1>
+    <header className="flex justify-between p-4 border-b border-blue-800">
+      <h1>hello</h1>
       <nav>
         {routes.map((route) => {
           return (
@@ -45,3 +41,5 @@ function NavLink({
     </Link>
   );
 }
+
+ 

@@ -19,37 +19,38 @@ function SocialLink({
 
 export function Socials() {
   return (
-    <div className="flex flex-col">
-      {links.map((link) => {
-        return (
-          <div className="flex flex-row justify-between">
-            <SocialLink key={link.name} href={link.href}>
-              {link.name} 
-            </SocialLink>
-            <div className="">
-            {link.icon}
+    <div className="flex justify-center py-8">
+      <div className="flex flex-col p-2 space-y-2 border border-blue-800">
+        <h1 className="text-center">Contacts:</h1>
+        {links.map((link) => {
+          return (
+            <div className="flex flex-row justify-between border border-blue-800 p-2">
+              <SocialLink key={link.name} href={link.href}>
+                {link.name}
+              </SocialLink>
+              <div className="pl-32">{link.icon}</div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
 
 const links = [
   {
-    name: "instagram",
-    href: "/",
-    icon: <Instagram />,
+    name: "Github",
+    href: "https://github.com/0Zeno",
+    icon: <Github />,
   },
   {
-    name: "mail",
+    name: "Mail",
     href: "/",
     icon: <Mail />,
   },
   {
-    name: "github",
-    href: "https://github.com/0Zeno",
-    icon: <Github />,
+    name: "Instagram",
+    href: "/",
+    icon: <Instagram />,
   },
 ];
