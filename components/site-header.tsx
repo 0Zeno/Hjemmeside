@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Image from 'next/image'
+import Image from "next/image";
+import LogoImage from "components/logo.png";
 
 const routes = [
   {
@@ -12,22 +13,11 @@ const routes = [
   },
 ];
 
-function Logo() {
-  return (
-    <Image
-      src="/components/logo.png"
-      width={16}
-      height={16}
-      alt="Picture of the author"
-    />
-  )
-}
-
 export function SiteHeader() {
   return (
-    <header className="flex justify-between p-4 border-b border-gray-400 bg-[#7cdbf9]">
-      <Logo/>
-      <nav>
+    <header className="flex justify-between px-4">
+      <h1 className="p-4 text-4xl font-medium">Zeno Elio Leonardi</h1>
+      <nav className="p-4 text-lg font-medium">
         {routes.map((route) => {
           return (
             <NavLink key={route.name} href={route.href}>
@@ -48,10 +38,8 @@ function NavLink({
   children: React.ReactNode;
 }) {
   return (
-    <Link className="hover:underline text-blue-600 p-2" href={href}>
+    <Link className="hover:text-blue-600 p-2" href={href}>
       {children}
     </Link>
   );
 }
-
- 
