@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/site-header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Min blogg",
+  title: "Zeno Elio Leonardi",
 };
 
 export default function RootLayout({

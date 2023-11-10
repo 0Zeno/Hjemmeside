@@ -10,7 +10,7 @@ function SocialLink({
 }) {
   return (
     <div className="">
-      <Link className="hover:underline flex" href={href}>
+      <Link className="flex" href={href}>
         {children}
       </Link>
     </div>
@@ -24,7 +24,7 @@ export function Socials() {
         {links.map((link) => {
           return (
             <SocialLink key={link.name} href={link.href}>
-              <div className="flex flex-row justify-between w-64 border border-gray-400 p-2 hover:bg-gray-200">
+              <div className="flex flex-row justify-between w-64 border border-gray-400 p-2 hover:bg-[#CACACA]">
                 {link.name}
                 <div className="">{link.icon}</div>
               </div>
@@ -40,13 +40,11 @@ const links = [
   {
     name: "Github",
     href: "https://github.com/0Zeno",
-    username: "@0Zeno",
     icon: <Github />,
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/zeno-elio-leonardi-60ba58225/",
-    username: "@zenoelioleonardi",
     icon: <Linkedin />,
   },
 ];

@@ -15,9 +15,9 @@ const routes = [
 
 export function SiteHeader() {
   return (
-    <header className="flex justify-between px-4">
+    <header className="flex justify-between px-4 border-b border-gray-400">
       <h1 className="p-4 text-4xl font-medium">Zeno Elio Leonardi</h1>
-      <nav className="p-4 text-lg font-medium">
+      <nav className="pt-6 text-lg font-medium">
         {routes.map((route) => {
           return (
             <NavLink key={route.name} href={route.href}>
