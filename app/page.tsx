@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Socials } from "@/components/socials";
 
 export default function Home() {

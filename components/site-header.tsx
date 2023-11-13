@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import LogoImage from "components/logo.png";
 
 const routes = [
   {
@@ -9,7 +7,7 @@ const routes = [
   },
   {
     name: "About",
-    href: "/om",
+    href: "/about",
   },
 ];
 
