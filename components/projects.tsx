@@ -1,3 +1,5 @@
+import { Link } from "lucide-react";
+
 const projectslist = [
   {
     projectname: "echo - Websuite",
@@ -17,7 +19,7 @@ export default function Projects() {
             <div className="border border-border p-2 space-y-2">
               <h2 className="p-2 font-medium">{project.projectname}</h2>
               <p className="p-2 w-64">{project.discription}</p>
-              <a className="p-2" href="https://echo.uib.no/">{project.link}</a>
+              <a className="p-2" href="https://echo.uib.no/" target="_blank">{project.link}</a>
               <p className="border border-border p-2">{project.tech}</p>
             </div>
           </div>
