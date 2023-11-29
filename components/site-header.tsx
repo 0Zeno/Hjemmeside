@@ -4,8 +4,9 @@ import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
-import { Button, buttonVariants } from "@/components/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import ModeToggle from "./theeme-switch-button";
+import DropdownMenuButton from "./drop-down-menu";
 
 const routes = [
   {
@@ -28,34 +29,32 @@ export function SiteHeader() {
       <h1 className="p-2 text-4xl font-medium hidden sm:block">
         Zeno Elio Leonardi
       </h1>
-      <h1 className="p-2 text-4xl font-medium block sm:hidden">Zeno</h1>
+      <h1 className="p-2 text-4xl font-medium block sm:hidden">ZEL</h1>
       <nav className="pt-2 font-medium flex space-x-2">
-        <ModeToggle />  
-        {routes.map((route) => {
-          return (
-            <Button key={route.name} variant="outline" size="default">
-              <NavLink href={route.href}>
-              {route.name}
-              </NavLink>
-            </Button>
-            
-          );
-        })}
+        <ModeToggle />
+        <div className="hidden sm:block space-x-2">
+          {routes.map((route) => {
+            return (
+              <Button key={route.name} variant="outline" size="default">
+                <NavLink href={route.href}>{route.name}</NavLink>
+              </Button>
+            );
+          })}
+        </div>
+        <div className="sm:hidden">
+          <DropdownMenuButton />
+        </div>
       </nav>
     </header>
   );
 }
 
-function NavLink({
+export default function NavLink({
   href,
   children,
 }: {
   href: string;
   children: React.ReactNode;
 }) {
-  return (
-    <Link href={href}>
-      {children}
-    </Link>
-  );
+  return <Link href={href}>{children}</Link>;
 }

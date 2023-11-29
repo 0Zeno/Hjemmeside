@@ -1,6 +1,6 @@
 import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 
 function SocialLink({
   href,
@@ -25,7 +25,11 @@ export function Socials() {
         {links.map((link) => {
           return (
             <SocialLink key={link.name} href={link.href}>
-              <Button variant="outline" size="icon" className="flex flex-row justify-between w-64 p-2">
+              <Button
+                variant="outline"
+                size="icon"
+                className="flex flex-row justify-between w-64 p-2"
+              >
                 {link.name}
                 <div className="">{link.icon}</div>
               </Button>
