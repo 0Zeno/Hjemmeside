@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { AboutMe } from "@/components/about";
 
 export default function About() {

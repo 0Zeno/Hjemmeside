@@ -1,5 +1,6 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
+import { Button } from "./button";
 
 function SocialLink({
   href,
@@ -20,14 +21,14 @@ function SocialLink({
 export function Socials() {
   return (
     <div className="flex py-8">
-      <div className="flex flex-col p-2 space-y-2 border border-gray-400">
+      <div className="flex flex-col p-2 space-y-2 border">
         {links.map((link) => {
           return (
             <SocialLink key={link.name} href={link.href}>
-              <div className="flex flex-row justify-between w-64 border border-gray-400 p-2 hover:bg-[#CACACA]">
+              <Button variant="outline" size="icon" className="flex flex-row justify-between w-64 p-2">
                 {link.name}
                 <div className="">{link.icon}</div>
-              </div>
+              </Button>
             </SocialLink>
           );
         })}
@@ -46,5 +47,10 @@ const links = [
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/zeno-elio-leonardi-60ba58225/",
     icon: <Linkedin />,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/zenoelio/",
+    icon: <Instagram />,
   },
 ];
