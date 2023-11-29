@@ -33,8 +33,8 @@ export function SiteHeader() {
         <ModeToggle />  
         {routes.map((route) => {
           return (
-            <Button variant="outline" size="default">
-              <NavLink key={route.name} href={route.href}>
+            <Button key={route.name} variant="outline" size="default">
+              <NavLink href={route.href}>
               {route.name}
               </NavLink>
             </Button>

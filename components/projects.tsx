@@ -13,7 +13,7 @@ export default function Projects() {
     <div>
       {projectslist.map((project) => {
         return (
-          <div className="pb-2 flex">
+          <div key={project.projectname} className="pb-2 flex">
             <div className="border border-border p-2 space-y-2">
               <h2 className="p-2 font-medium">{project.projectname}</h2>
               <p className="p-2 w-64">{project.discription}</p>
