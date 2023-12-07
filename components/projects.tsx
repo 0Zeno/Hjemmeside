@@ -2,7 +2,7 @@ import { Link } from "lucide-react";
 
 const projectslist = [
   {
-    projectname: "echo - Webkom",
+    projectname: "Webkom - echo",
     discription:
       "Webkom is a subgroup of echo that operates and further develops echo's web solutions.",
     link: "echo.uib.no",
