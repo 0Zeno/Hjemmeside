@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { GamepadIcon, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
@@ -11,7 +11,7 @@ function SocialLink({
 }) {
   return (
     <div className="">
-      <Link className="flex" href={href}>
+      <Link target="_blank" className="flex" href={href}>
         {children}
       </Link>
     </div>
@@ -56,6 +56,12 @@ const links = [
     href: "https://www.linkedin.com/in/zeno-elio-leonardi-60ba58225/",
     icon: <Linkedin />,
     username: "in/Zeno Elio Leonardi",
+  },
+  {
+    name: "Mail",
+    href: "mailto:zenoelioleone@gmail.com",
+    icon: <Mail />,
+    username: "Zenoelioleone@gmail.com",
   },
   {
     name: "Instagram",
