@@ -28,10 +28,13 @@ export function Socials() {
               <Button
                 variant="outline"
                 size="icon"
-                className="flex flex-row justify-between w-64 p-2"
+                className="justify-between w-72 h-12 p-2"
               >
-                {link.name}
-                <div className="">{link.icon}</div>
+                <div className="flex flex-col text-left">
+                  <div className="">{link.name}</div>
+                  <p className="text-[10px]">{link.username}</p>
+                </div>
+                <div>{link.icon}</div>
               </Button>
             </SocialLink>
           );
@@ -46,15 +49,18 @@ const links = [
     name: "Github",
     href: "https://github.com/0Zeno",
     icon: <Github />,
+    username: "@0Zeno",
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/zeno-elio-leonardi-60ba58225/",
     icon: <Linkedin />,
+    username: "in/Zeno Elio Leonardi",
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/zenoelio/",
     icon: <Instagram />,
+    username: "@Zenoelio",
   },
 ];
