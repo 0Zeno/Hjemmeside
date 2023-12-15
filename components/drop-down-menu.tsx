@@ -8,21 +8,8 @@ import {
 import NavLink from "./site-header";
 import { Button } from "./ui/button";
 import { MenuIcon } from "lucide-react";
+import { routes} from "./site-header";
 
-const routes = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "About",
-    href: "/about",
-  },
-  {
-    name: "Projects",
-    href: "/projects",
-  },
-];
 
 export default function DropdownMenuButton() {
   return (

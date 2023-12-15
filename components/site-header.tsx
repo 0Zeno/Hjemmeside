@@ -8,11 +8,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import ModeToggle from "./theeme-switch-button";
 import DropdownMenuButton from "./drop-down-menu";
 
-const routes = [
-  {
-    name: "Home",
-    href: "/",
-  },
+export const routes = [
   {
     name: "About",
     href: "/about",
@@ -26,10 +22,12 @@ const routes = [
 export function SiteHeader() {
   return (
     <header className="flex justify-between px-4 border-b">
-      <h1 className="p-2 text-4xl font-medium hidden sm:block">
-        Zeno Elio Leonardi
-      </h1>
-      <h1 className="p-2 text-4xl font-medium block sm:hidden">ZEL</h1>
+      <a href="/">
+        <h1 className="p-2 text-4xl font-medium hidden sm:block">
+          Zeno Elio Leonardi
+        </h1>
+        <h1 className="p-2 text-4xl font-medium block sm:hidden">ZEL</h1>
+      </a>
       <nav className="pt-2 font-medium flex space-x-2">
         <ModeToggle />
         <div className="hidden sm:block space-x-2">
