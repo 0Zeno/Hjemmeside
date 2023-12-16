@@ -19,7 +19,7 @@ export default function Projects() {
             <div className="border border-border p-2 space-y-2">
               <a href="" className="p-2 font-medium">{project.projectname}</a>
               <p className="p-2 w-64">{project.discription}</p>
-              <a className="p-2 hover:underline" href="https://echo.uib.no/" target="_blank">{project.link}</a>
+              <a className="p-2 hover:underline" href="https://beta.echo-webkom.no/" target="_blank">{project.link}</a>
               <p className="border border-border p-2">{project.tech}</p>
             </div>
           </div>
