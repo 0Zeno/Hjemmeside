@@ -11,7 +11,7 @@ export function AboutMe() {
   return (
     <div>
       {texts.map((text) => (
-        <p className="pt-8 pb-2 border-border border-b" key={text.info}>
+        <p className="pt-8 pb-2 border-border border-b md:w-1/2" key={text.info}>
           {text.info}
         </p>
       ))}
