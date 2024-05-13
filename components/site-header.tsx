@@ -6,7 +6,6 @@ import { useTheme } from "next-themes";
 
 import { Button, buttonVariants } from "@/components/ui/button";
 import ModeToggle from "./theeme-switch-button";
-import DropdownMenuButton from "./drop-down-menu";
 
 export const routes = [
   {
