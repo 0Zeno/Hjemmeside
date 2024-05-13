@@ -13,7 +13,7 @@ import { routes} from "./site-header";
 
 export default function DropdownMenuButton() {
   return (
-    <Button variant="outline" size="icon">
+    <Button variant="backgroundblur" size="icon">
       <DropdownMenu>
         <DropdownMenuTrigger className="absolute"><MenuIcon /></DropdownMenuTrigger>
         <DropdownMenuContent>

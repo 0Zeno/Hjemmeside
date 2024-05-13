@@ -27,7 +27,7 @@ export function SiteHeader() {
   return (
     <header className="flex justify-between px-4">
       <nav className="pt-2 font-medium flex space-x-2">
-        <div className="hidden sm:block space-x-2">
+        <div className="space-x-2">
           {routes.map((route) => {
             return (
               <Button key={route.name} variant="backgroudblur" size="default">
@@ -35,9 +35,6 @@ export function SiteHeader() {
               </Button>
             );
           })}
-        </div>
-        <div className="sm:hidden">
-          <DropdownMenuButton />
         </div>
       </nav>
     </header>
