@@ -10,6 +10,10 @@ import DropdownMenuButton from "./drop-down-menu";
 
 export const routes = [
   {
+    name: "Home",
+    href: "/",
+  },
+  {
     name: "About",
     href: "/about",
   },
@@ -21,13 +25,7 @@ export const routes = [
 
 export function SiteHeader() {
   return (
-    <header className="flex justify-between px-4 border-b">
-      <a href="/">
-        <h1 className="p-2 text-4xl font-medium hidden sm:block">
-          Zeno Elio Leonardi
-        </h1>
-        <h1 className="p-2 text-4xl font-medium block sm:hidden">ZEL</h1>
-      </a>
+    <header className="flex justify-between px-4">
       <nav className="pt-2 font-medium flex space-x-2">
         <div className="hidden sm:block space-x-2">
           {routes.map((route) => {
