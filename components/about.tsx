@@ -3,7 +3,7 @@ const texts = [
     info: "Currently studying Cyber Security at the University in Bergen.",
   },
   {
-    info: "Member of echo - Webkom.",
+    info: "Member of Webkom and echo consulting",
   },
 ];
 

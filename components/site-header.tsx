@@ -29,11 +29,10 @@ export function SiteHeader() {
         <h1 className="p-2 text-4xl font-medium block sm:hidden">ZEL</h1>
       </a>
       <nav className="pt-2 font-medium flex space-x-2">
-        <ModeToggle />
         <div className="hidden sm:block space-x-2">
           {routes.map((route) => {
             return (
-              <Button key={route.name} variant="outline" size="default">
+              <Button key={route.name} variant="backgroudblur" size="default">
                 <NavLink href={route.href}>{route.name}</NavLink>
               </Button>
             );

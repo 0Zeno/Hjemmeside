@@ -21,20 +21,20 @@ function SocialLink({
 export function Socials() {
   return (
     <div className="flex py-8">
-      <div className="flex flex-col p-2 space-y-2 border">
+      <div className="flex flex-col p-2 space-y-2">
         {links.map((link) => {
           return (
             <SocialLink key={link.name} href={link.href}>
               <Button
-                variant="outline"
+                variant="backgroudblur"
                 size="icon"
-                className="justify-between w-72 h-12 p-2"
+                className="justify-start w-auto h-12 p-2 space-x-2"
               >
+                <div className="drop-shadow-md">{link.icon}</div>
                 <div className="flex flex-col text-left">
                   <div className="">{link.name}</div>
                   <p className="text-[10px]">{link.username}</p>
                 </div>
-                <div>{link.icon}</div>
               </Button>
             </SocialLink>
           );
