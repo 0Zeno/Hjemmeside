@@ -27,7 +27,7 @@ export function Socials() {
             <SocialLink key={link.name} href={link.href}>
               <Button
                 variant="backgroudblur"
-                size="md:icon md:sm"
+                size="icon"
                 className="w-auto md:h-12 h-8 p-2 space-x-2"
               >
                 <div className="drop-shadow-md">{link.icon}</div>
