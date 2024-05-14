@@ -34,6 +34,7 @@ export function SiteHeader() {
               </Button>
             );
           })}
+          <ModeToggle/>
         </div>
       </nav>
     </header>
