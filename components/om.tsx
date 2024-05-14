@@ -1,9 +1,12 @@
 const texts = [
   {
-    info: "Currently studying Cyber Security at the University in Bergen.",
+    info: "Studerer Informatikk: Datasikkerhet ved Universitetet i Bergen",
   },
   {
-    info: "Member of Webkom and echo consulting",
+    info: "Født i Tyskland, flyttet til Norge i 2007",
+  },
+  {
+    info: "Gikk på Nordahl Grieg videregående skole",
   },
 ];
 

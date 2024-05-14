@@ -9,16 +9,16 @@ import ModeToggle from "./theeme-switch-button";
 
 export const routes = [
   {
-    name: "Home",
+    name: "Hjem",
     href: "/",
   },
   {
-    name: "About",
-    href: "/about",
+    name: "Om",
+    href: "/om",
   },
   {
-    name: "Projects",
-    href: "/projects",
+    name: "Prosjekter",
+    href: "/prosjekter",
   },
 ];
 
@@ -34,8 +34,8 @@ export function SiteHeader() {
               </Button>
             );
           })}
-          <ModeToggle/>
         </div>
+          <ModeToggle/>
       </nav>
     </header>
   );
