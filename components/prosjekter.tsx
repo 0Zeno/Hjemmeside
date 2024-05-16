@@ -7,7 +7,7 @@ const projectslist = [
       "Webkom er en undergruppe som drifter og videreutvikler echo sine webløsninger, blant annet denne nettsiden:",
     linknavn: "echo.uib.no",
     link: "https://echo.uib.no/",
-    tech: "Next.js",
+    tech: "Remix.js",
   },
   {
     projectname: "echo Consulting",
