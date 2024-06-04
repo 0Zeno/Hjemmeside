@@ -21,7 +21,9 @@ const projectslist = [
 
 export default function Projects() {
   return (
-    <div className="flex space-x-2">
+    <div className="flex">
+      <div className="flex md:flex-row md:space-x-2 space-y-2 md:space-y-0 flex-col">
+
       {projectslist.map((project) => {
         return (
           <div key={project.projectname}>
@@ -33,6 +35,7 @@ export default function Projects() {
           </div>
         );
       })}
+      </div>
     </div>
   );
 }

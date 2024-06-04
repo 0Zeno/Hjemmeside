@@ -13,10 +13,6 @@ export const routes = [
     href: "/",
   },
   {
-    name: "Om",
-    href: "/om",
-  },
-  {
     name: "Prosjekter",
     href: "/prosjekter",
   },
