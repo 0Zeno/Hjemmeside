@@ -62,10 +62,10 @@ const links = [
     icon: <Mail />,
     username: "Zenoelioleone@gmail.com",
   },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/zenoelio/",
-    icon: <Instagram />,
-    username: "@Zenoelio",
-  },
+  //{
+    //name: "Instagram",
+    //href: "https://www.instagram.com/zenoelio/",
+    //icon: <Instagram />,
+    //username: "@Zenoelio",
+  //},
 ];
