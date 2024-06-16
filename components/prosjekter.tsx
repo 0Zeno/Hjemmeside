@@ -33,7 +33,7 @@ const schoolProjects = [
   {
     projectname: "Endless Hopper",
     discription:
-      "Endless hopper er et spill jeg lagde i java helt fra scratch. Spillet går ut på at man enten kan hoppe til høyre eller venstre på en platform som faller fortere og fortere",
+      "Endless hopper er et spill jeg lagde i java helt fra scratch. Spillet går ut på at man enten kan hoppe til høyre eller venstre på en platform som faller fortere og fortere. Målet er å få høyest mulig score.",
     linknavn: "Lenke til github",
     link: "https://github.com/0Zeno/EndlessHopper",
     tech: "Java",
