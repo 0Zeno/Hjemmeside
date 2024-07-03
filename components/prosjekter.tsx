@@ -47,7 +47,7 @@ export default function Projects() {
     <div className="flex">
       <div className="space-y-4">
         <h1 className="flex text-3xl text-shadow font-semibold">
-          Gruppe prosjekter
+          Verv
         </h1>
         <div className="flex sm:flex-row flex-col sm:space-x-4 space-y-4 sm:space-y-0">
           {groupProjects.map((project) => {
