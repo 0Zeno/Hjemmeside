@@ -26,7 +26,7 @@ export default function RootLayout({
       </head>
       <ThemeProvider
         attribute="class"
-        defaultTheme="light"
+        defaultTheme="dark"
         enableSystem
       >
         <body className={inter.className}>
