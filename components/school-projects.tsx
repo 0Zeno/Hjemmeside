@@ -31,7 +31,7 @@ export default function SchoolProjects() {
         {projects.map((project) => {
           return (
             <div key={project.projectname}>
-              <div className="border-2 border-border rounded-md p-4 w-80">
+              <div className="border-2 border-border rounded-md p-4">
                 <p className="font-bold text-shadow text-2xl">
                   {project.projectname}
                 </p>

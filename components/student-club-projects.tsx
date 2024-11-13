@@ -21,16 +21,14 @@ const groupProjects = [
 
 export default function StudentClubProjects() {
   return (
-    <div className="flex">
+    <div className="flex ">
       <div className="space-y-4">
-        <h1 className="flex text-4xl text-shadow font-semibold">
-          Verv
-        </h1>
+        <h1 className="flex text-4xl text-shadow font-semibold">Verv</h1>
         <div className="flex flex-col space-y-4">
           {groupProjects.map((project) => {
             return (
               <div key={project.projectname}>
-                <div className="border-border rounded-md p-4 w-80 border-2">
+                <div className="border-border rounded-md p-4 border-2">
                   <p className="font-bold text-shadow text-2xl">
                     {project.projectname}
                   </p>

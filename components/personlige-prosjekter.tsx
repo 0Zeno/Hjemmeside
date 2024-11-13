@@ -27,7 +27,7 @@ export default function PersonalProjects() {
         {projects.map((project) => {
           return (
             <div key={project.projectname}>
-              <div className="border-2 border-border rounded-md p-4 w-80 ">
+              <div className="border-2 border-border rounded-md p-4">
                 <h1 className="font-bold text-shadow text-2xl pb-2">
                   {project.projectname}
                 </h1>
