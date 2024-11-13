@@ -23,32 +23,29 @@ const projects = [
 
 export default function SchoolProjects() {
   return (
-    <div>
-      <h1 className="flex text-4xl text-shadow font-semibold">
-        Skole prosjekter
-      </h1>
-      <div className="pt-4 space-y-4">
-        {projects.map((project) => {
-          return (
-            <div key={project.projectname}>
-              <div className="border-2 border-border rounded-md p-4">
-                <p className="font-bold text-shadow text-2xl">
-                  {project.projectname}
-                </p>
-                <p className="font-semibold">{project.fag}</p>
-                <p className="pt-2 pb-4">{project.discription}</p>
-                <a
-                  href={project.link}
-                  className="hover:text-shadow hover:underline border-2 border-border rounded p-1 hover:bg-slate-900 text-sm "
-                >
-                  {project.linknavn}
-                </a>
-                <p className="text-xs pt-4">{project.tech}</p>
+    <div className="space-y-8">
+      {projects.map((project) => {
+        return (
+          <div key={project.projectname}>
+            <div>
+              <div className="flex">
+                <p className="font-bold text-xl">{project.projectname}</p>
+                <ul className="pt-1 pl-6 list-disc">
+                  <li className="opacity-70 font-semibold">{project.fag}</li>
+                </ul>
               </div>
+              <p className="text-xs pb-4 opacity-70">{project.tech}</p>
+              <p className=" pb-4">{project.discription}</p>
+              <a
+                href={project.link}
+                className="hover:text-shadow hover:underline text-sm "
+              >
+                {project.linknavn}
+              </a>
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

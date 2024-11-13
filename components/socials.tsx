@@ -28,7 +28,7 @@ export function Socials() {
               <Button
                 variant="backgroudblur"
                 size="icon"
-                className="w-auto md:h-12 h-8 p-2 space-x-2"
+                className="w-auto p-2"
               >
                 <div className="drop-shadow-md">{link.icon}</div>
                 <div className="flex flex-col text-left">
@@ -47,25 +47,19 @@ const links = [
   {
     name: "Github",
     href: "https://github.com/0Zeno",
-    icon: <Github />,
+    icon: <Github className="h-4" />,
     username: "@0Zeno",
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/zeno-elio-leonardi-60ba58225/",
-    icon: <Linkedin />,
+    icon: <Linkedin className="h-4"/>,
     username: "in/Zeno Elio Leonardi",
   },
   {
     name: "Mail",
     href: "mailto:zenoelioleone@gmail.com",
-    icon: <Mail />,
+    icon: <Mail className="h-4"/>,
     username: "Zenoelioleone@gmail.com",
   },
-  //{
-    //name: "Instagram",
-    //href: "https://www.instagram.com/zenoelio/",
-    //icon: <Instagram />,
-    //username: "@Zenoelio",
-  //},
 ];

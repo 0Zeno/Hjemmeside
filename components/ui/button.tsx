@@ -11,6 +11,7 @@ const buttonVariants = cva("inline-flex items-center justify-center", {
       destructive:
         "bg-destructive text-destructive-foreground hover:bg-destructive/90",
       backgroudblur: "hover:text-shadow",
+      backgroudblurproject: "hover:text-shadow font-semibold text-2xl",
       secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
       ghost: "hover:bg-accent hover:text-accent-foreground",
       link: "text-primary underline-offset-4 hover:underline",
@@ -19,7 +20,7 @@ const buttonVariants = cva("inline-flex items-center justify-center", {
       default: "h-10 px-2",
       sm: "h-8 px-3",
       lg: "h-11 px-8",
-      icon: "h-10 w-10",
+      icon: "h-2 w-2 ",
     },
   },
   defaultVariants: {

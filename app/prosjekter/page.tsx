@@ -1,4 +1,4 @@
-import Projects from "@/components/prosjekter";
+import Projects from "@/components/projects";
 
 export default function MyProjects() {
   return (
