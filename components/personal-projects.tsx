@@ -1,5 +1,13 @@
 const projects = [
   {
+    projectname: "Elvebrusfestivalen.no",
+    discription:
+      "Nettside for elvebrusfestivalen. Utviklet dette prosjektet for å forbedre min kunnskap om sanity.",
+    linknavn: "Se nettsiden ->",
+    link: "https://www.elvebrusfestivalen.no/",
+    tech: "Next.js, Sanity, Tailwind, TypeScript, Vercel",
+  },
+  {
     projectname: "Qr-konverterer",
     discription:
       "Lagde en nettside som konverterer en url til en QR-kode som du selv kan velge størrelse på. Dette gjorde jeg for å lære meg hvordan forms fungerer i React.",
@@ -25,9 +33,7 @@ export default function PersonalProjects() {
           return (
             <div key={project.projectname}>
               <div>
-                <h1 className="font-bold text-xl">
-                  {project.projectname}
-                </h1>
+                <h1 className="font-bold text-xl">{project.projectname}</h1>
                 <p className="text-xs pb-4 opacity-70">{project.tech}</p>
                 <p className="pb-4">{project.discription}</p>
                 <a
