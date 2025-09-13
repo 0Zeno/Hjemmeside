@@ -30,10 +30,9 @@ export default function RootLayout({
         enableSystem
       >
         <body className={inter.className}>
-          <div className="max-h-screen">
+          <div>
             <SiteHeader />
             {children}
-            <SiteFooter />
           </div>
         </body>
       </ThemeProvider>

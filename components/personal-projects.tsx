@@ -2,15 +2,15 @@ const projects = [
   {
     projectname: "Elvebrusfestivalen.no",
     discription:
-      "Nettside for elvebrusfestivalen. Utviklet dette prosjektet for å forbedre min kunnskap om sanity.",
+      "Utviklet nettsiden til elvebrusfestivalen i samarbeid med arrangørene. Elvebrus er en liten lokal festival i Stanghelle på vestlandet.",
     linknavn: "Se nettsiden ->",
     link: "https://www.elvebrusfestivalen.no/",
     tech: "Next.js, Sanity, Tailwind, TypeScript, Vercel",
   },
   {
-    projectname: "Qr-konverterer",
+    projectname: "QR kode frontend",
     discription:
-      "Lagde en nettside som konverterer en url til en QR-kode som du selv kan velge størrelse på. Dette gjorde jeg for å lære meg hvordan forms fungerer i React.",
+      "Frontend til QR api.",
     linknavn: "Se nettsiden ->",
     link: "https://url-to-qr-converter.vercel.app/",
     tech: "Nextjs, Tailwind, TypeScript, Vercel",
@@ -18,7 +18,7 @@ const projects = [
   {
     projectname: "QR API",
     discription:
-      "Lagde et API som fungerer som backend-en til QR konvertereren. Dette prosjektet langde jeg for å lære meg litt om Go og hvordan lage et rest-api.",
+      "Lagde et API som fungerer som backend-en til QR konvertereren. Utviklet dette prosjektet for å lære meg hvordan man lager en backend i Go.", 
     linknavn: "Sjekk ut koden ->",
     link: "https://github.com/0Zeno/Tetris-INF101",
     tech: "Go, Docker, Fly.io",
