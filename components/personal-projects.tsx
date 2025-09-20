@@ -10,7 +10,7 @@ const projects = [
   {
     projectname: "QR kode frontend",
     discription:
-      "Frontend til QR api.",
+      "Frontend til QR api som jeg utviklet for å lære meg å bruke forms i React.",
     linknavn: "Se nettsiden ->",
     link: "https://url-to-qr-converter.vercel.app/",
     tech: "Nextjs, Tailwind, TypeScript, Vercel",
