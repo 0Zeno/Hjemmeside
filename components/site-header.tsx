@@ -1,11 +1,8 @@
-import Link from "next/link";
 
 import * as React from "react";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
 
-import { Button, buttonVariants } from "@/components/ui/button";
 import ModeToggle from "./theeme-switch-button";
+import Link from "next/link";
 
 
 export function SiteHeader() {
@@ -13,17 +10,11 @@ export function SiteHeader() {
     <header className="flex justify-between px-4">
       <nav className="pt-2 font-medium flex space-x-2">
         <ModeToggle/>
+        <Link className="pt-2 hover:text-shadow" href="/">Hjem</Link>
+        <Link className="pt-2 hover:text-shadow" href="/about">Om meg</Link>
       </nav>
     </header>
   );
 }
 
-export default function NavLink({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
-  return <Link href={href}>{children}</Link>;
-}
+

@@ -12,6 +12,7 @@ export default function Projects() {
 
   return (
     <div className="space-y-8 flex flex-col justify-center items-center sm:mx-64">
+      <h1 className="text-left w-full font-semibold text-shadow text-4xl">Prosjekter og Verv</h1>
       <div className="flex flex-col sm:flex-row sm:justify-between w-full border-b-2">
         <Button
           className={cn("", { "text-shadow": filter === "verv" })}

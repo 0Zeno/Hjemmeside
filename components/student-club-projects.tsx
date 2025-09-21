@@ -17,6 +17,15 @@ const groupProjects = [
     link: "https://echo-consulting.no/",
     tech: "React Router, Sanity, TypeScript, Tailwind, Fly.io",
   },
+  {
+    projectname: "echo Hovedstyret",
+    role: "Styremedlem",
+    discription:
+      "I hovedstyret til echo har vi ansvar for gjøre hverdagen til informatikkstudenter så bra som mulig. Dette gjør vi ved å styrke og ta besluttinger om undergruppene til echo.",
+    linkname: "",
+    link: "https://echo.uib.no/for-studenter/gruppe/hovedstyret",
+    tech: "",
+  },
 ];
 
 export default function StudentClubProjects() {
