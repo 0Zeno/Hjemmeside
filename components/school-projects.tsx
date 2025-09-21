@@ -1,4 +1,15 @@
 const projects = [
+
+  {
+    projectname: "MessageFormat 2 bibliotek i Svelte",
+    discription:
+      "MessageFormat 2 er en Unicode standard for lokalisering av dynamiske strenger. Jobber i et team på 3 studenter for å implementere et Svlete bibliotek.",
+    linknavn: "Sjekk ut koden ->",
+    link: "https://github.com/tonylam750/svelte-mf2",
+    tech: "TypeScript, Svelte",
+    fag: "INF218",
+    år: "Høst 2025",
+  },
   {
     projectname: "Endless Hopper",
     discription:
@@ -7,7 +18,7 @@ const projects = [
     link: "https://github.com/0Zeno/EndlessHopper",
     tech: "Java",
     fag: "INF101",
-    år: "vår 2024",
+    år: "Vår 2024",
   },
   {
     projectname: "Tetris",
@@ -17,7 +28,7 @@ const projects = [
     link: "https://github.com/0Zeno/Tetris-INF101",
     tech: "Java",
     fag: "INF101",
-    år: "vår 2024",
+    år: "Vår 2024",
   },
 ];
 
